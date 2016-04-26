@@ -1,0 +1,16 @@
+nginx:
+  image: nginx:1.9.14
+  volumes:
+    - ./nginx.conf:/etc/nginx/nginx.conf:ro
+  ports:
+    - "80:80"
+  links:
+    - app
+
+app:
+  image: node:0.10
+  volumes:
+    - .:/usr/src/app
+  command: node /usr/src/app/server.js
+  ports:
+    - "5000:5000"
