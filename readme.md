@@ -1,5 +1,5 @@
-# Simple Demonstration of Nginx sub_filter
-This is a very simple demonstration of the nginx [sub_filter]() module
+# Simple Demonstration of ngx_http_sub_module
+This is a very simple demonstration of the nginx [sub_filter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) module
 and how to use it to replace content served up by nginx. 
 
 ## Prerequisites
